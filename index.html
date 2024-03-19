@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style/all.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="select-group">
+          <select name="poke-generation" class="poke-generation select">
+            <option value="1">第一世代</option>
+            <option value="2">第二世代</option>
+            <option value="3">第三世代</option>
+            <option value="4">第四世代</option>
+            <option value="5">第五世代</option>
+            <option value="6">第六世代</option>
+            <option value="7">第七世代</option>
+            <option value="8">第八世代</option>
+            <option value="9">第九世代</option>
+          </select>
+          <select name="pokeNum" class="pokeNum select"></select>
+        </div>
+        <div class="poke-card">
+          <div class="poke-info">
+            <div class="base-info">
+              <div class="poke-img">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png"
+                  alt=""
+                />
+              </div>
+              <h1 class="poke-name">月精靈</h1>
+              <ul class="poke-types">
+                <li class="dark">惡</li>
+                <li class="normal">一般</li>
+              </ul>
+              <h2>特性</h2>
+              <ul class="ability">
+                <li><button>妖精皮膚</button></li>
+                <li><button class="hidden">茂盛</button></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="poke-stats">
+                <li>
+                  <p>HP</p>
+                  <span>123</span>
+                </li>
+                <li>
+                  <p>HP</p>
+                  <span></span>
+                </li>
+                <li>
+                  <p>HP</p>
+                  <span></span>
+                </li>
+                <li>
+                  <p>HP</p>
+                  <span></span>
+                </li>
+                <li>
+                  <p>HP</p>
+                  <span></span>
+                </li>
+                <li>
+                  <p>HP</p>
+                  <span></span>
+                </li>
+              </ul>
+              <p class="ability-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="src/js/all.js"></script>
+</html>

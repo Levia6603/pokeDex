@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Cubic11;
+  src: url(../font/Cubic_11_1.100_R.woff);
+}
+body {
+  font-family: "Cubic11", sans-serif;
+  background-image: url(https://img.freepik.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?w=2000&t=st=1701754115~exp=1701754715~hmac=021e4ad6c8f4c5671567726f443d024ac3ab6e31c03932dbfd7ab586af9c5ab5);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+a {
+  line-height: 1.5;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.poke-card {
+  width: 850px;
+  height: 530px;
+  padding: 40px 50px;
+  border-radius: 30px;
+  background-color: #f87e6c;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  padding: 16px 24px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.select-group select {
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+.poke-info {
+  display: flex;
+}
+.poke-info h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.poke-info h2 {
+  align-self: flex-start;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.base-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poke-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: #fff;
+}
+.poke-img img {
+  width: 200px;
+}
+
+.poke-types {
+  display: flex;
+  gap: 10px;
+}
+.poke-types li {
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.normal {
+  color: #000;
+  background-color: #e9e2e1;
+}
+
+.steel {
+  color: #000;
+  background-color: #9b9e9f;
+}
+
+.psychic {
+  color: #fff;
+  background-color: #f5859c;
+}
+
+.fighting {
+  color: #fff;
+  background-color: #f87e6c;
+  border: 1px solid #fff;
+}
+
+.flying {
+  color: #000;
+  background-color: #99d4e3;
+}
+
+.poison {
+  color: #fff;
+  background-color: #a87dd7;
+}
+
+.rock {
+  color: #fff;
+  background-color: #c1aa94;
+}
+
+.bug {
+  color: #fff;
+  background-color: #c6c75c;
+}
+
+.ghost {
+  color: #fff;
+  background-color: #a9a4c9;
+}
+
+.fire {
+  color: #fff;
+  background-color: #f5533b;
+}
+
+.water {
+  color: #fff;
+  background-color: #5b99d4;
+}
+
+.grass {
+  color: #fff;
+  background-color: #8ebf71;
+}
+
+.electric {
+  color: #000;
+  background-color: #fbb752;
+}
+
+.ice {
+  color: #000;
+  background-color: #a3e5f0;
+}
+
+.dragon {
+  color: #fff;
+  background-color: #7a6cde;
+}
+
+.dark {
+  color: #fff;
+  background-color: #312d2c;
+}
+
+.fairy {
+  color: #000;
+  background-color: #f6bbb7;
+}
+
+.ground {
+  color: #fff;
+  background-color: #996340;
+}
+
+.ability button {
+  width: 100px;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: #f87e6c;
+  text-align: center;
+  cursor: pointer;
+}
+.ability button:hover {
+  color: #fff;
+  background-color: #000;
+}
+.ability .hidden {
+  color: #fff;
+  background-color: #000;
+}
+.ability .hidden:hover {
+  color: #000;
+  background-color: #f87e6c;
+}
+
+.poke-stats {
+  margin-left: 100px;
+  font-size: 16px;
+}
+.poke-stats li {
+  margin-bottom: 5px;
+}
+.poke-stats p {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+  padding: 3px;
+  border-radius: 20px;
+  color: #f87e6c;
+  background-color: #fff;
+  text-align: center;
+}
+.poke-stats span {
+  display: inline-block;
+  padding: 0 10px;
+  color: #f87e6c;
+  background-color: #fff;
+  animation: grow 0.5s ease-in;
+}
+
+.ability-text {
+  margin: 50px 100px;
+}
+
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scale(1);
+    transform-origin: left;
+  }
+}/*# sourceMappingURL=all.css.map */
